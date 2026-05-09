@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: estateX
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/estateX
+    username: estateX
+    password: estateX_secret
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 50MB
+
+app:
+  file-storage:
+    upload-dir: ./uploads
+    base-url: http://localhost:8080/files
+  frontend-url: http://localhost:5173
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+
+app:
+  file-storage:
+    upload-dir: ${UPLOAD_DIR:/app/uploads}
+    base-url: ${FILES_BASE_URL}
+  frontend-url: ${FRONTEND_URL}

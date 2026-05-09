@@ -1,0 +1,19 @@
+{
+  "$schema": "https://stryker-mutator.io/schemas/stryker-schema.json#",
+  "testRunner": "vitest",
+  "vitest": {
+    "configFile": "vite.config.ts"
+  },
+  "mutate": [
+    "src/api/chat.ts",
+    "src/api/favourites.ts",
+    "src/api/listings.ts",
+    "src/api/users.ts",
+    "src/store/auth.ts"
+  ],
+  "thresholds": {
+    "high": 100,
+    "low": 100,
+    "break": 100
+  }
+}

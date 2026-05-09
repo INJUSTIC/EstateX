@@ -1,0 +1,34 @@
+.vscode/
+
+# Backend build output
+backend/build/
+backend/**/build/
+backend/**/bin/
+backend/.gradle/
+backend/.settings/
+backend/.gradle/
+
+# Frontend build output
+frontend/dist/
+frontend/dist-ssr/
+
+# Frontend project files
+frontend/logs/
+frontend/reports/
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+frontend/node_modules
+frontend/.local
+frontend/.vscode/*
+!frontend/.vscode/extensions.json
+frontend/.idea
+frontend/.DS_Store
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
