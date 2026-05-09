@@ -1,10 +1,10 @@
-# EstateX – A Real-World Polish Property Marketplace
+# EstateX – A Polish Property Marketplace
 
 ## 🎯 Project Vision
 
 **EstateX** is a comprehensive MVP of a property marketplace platform for Poland, designed to demonstrate modern full-stack development practices with an **AI-first testing philosophy**. The project showcases how to build a production-grade application using clean architecture, comprehensive test coverage, and automated bug detection through well-crafted tests.
 
-The primary goal was to **vibe code** (build incrementally) an application that is **genuinely useful in real life** — not a toy project, but something that could actually serve Polish users looking to rent or sell properties.
+The primary goal was to fully **vibe code** an application that could actually serve Polish users looking to rent or sell properties.
 
 ---
 
